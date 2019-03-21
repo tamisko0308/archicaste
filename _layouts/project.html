@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% include path_helper %}
+
+<!--=== Portfolio Start ======-->
+<section class="pt-100 pt-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 portfolio-left">
+        <div class="portfolio-slider owl-carousel">
+          {% assign portfolio_img = site.static_files | where: "portfolio_img", true %}
+          {%- for image in portfolio_img -%}
+            {%- if image.path contains page.ref and image.path contains 'slides' -%}
+                <div class="item"><img class="img-responsive" src="{{root_path}}{{image.path}}"/></div>
+            {% endif %}
+          {%- endfor -%}
+        </div>
+      </div>
+      <!--=== Left Side End ===-->
+      <div class="col-md-3 portfolio-right">
+        <h3>{{page.title}}</h3>
+        <p class="mt-30">{{content}}</p>
+      </div>
+      <!--=== Right Side End ===-->
+    </div>
+  </div>
+</section>
+<!--=== Portfolio End ======-->

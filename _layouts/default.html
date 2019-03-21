@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+  {% include head.html %}
+
+  <body>
+    <!--=== Loader Start ======-->
+    <div id="loader-overlay">
+      <div class="loader-wrapper">
+        <div class="arcon-pulse"></div>
+      </div>
+    </div>
+    <!--=== Loader End ======-->
+
+    <!--=== Wrapper Start ======-->
+    <div class="wrapper">
+      {% include navigation.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+    <!--=== Wrapper End ======-->
+
+    {% include js-includes.html %}
+
+  </body>
+</html>

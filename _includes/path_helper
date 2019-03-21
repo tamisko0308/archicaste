@@ -1,0 +1,10 @@
+{%- capture root_path -%}{{site.baseurl}}{%- endcapture -%}
+{%- capture assets_path -%}{{root_path}}/assets{%- endcapture -%}
+{%- capture images_path -%}{{assets_path}}/images{%- endcapture -%}
+
+{%- capture content_path -%}
+  {{root_path}}
+  {%- unless page.lang == 'en' -%}
+    /{{page.lang}}
+  {%- endunless -%}
+{%- endcapture -%}

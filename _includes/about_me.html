@@ -1,0 +1,25 @@
+{% include path_helper %}
+
+<!--=== About Us Start ======-->
+<section id="about" class="pb-80">
+  <div class="container">
+    <div class="row">
+      {% assign about_me_image_url = "/assets/images/" | append: page.about_me.image | prepend: site.baseurl %}
+      <div class="col-md-5 mb-20">
+        <img class="img-responsive" src="{{images_path}}/{{page.about_me.image}}" alt="{{site.my_name}}"/>
+      </div>
+      <div class="col-md-7">
+        <h2 class="text-uppercase font-700 mt-0"><span class="font-100">{{ page.about_me.title }}</span></h2>
+        {% for text in page.about_me.text %}
+          {% if forloop.first %}
+            <p class="mt-20">{{ text }}</p>
+          {% else %}
+            <p>{{ text }}</p>
+          {% endif %}
+        {% endfor %}
+        {% assign resume=site.pages | where:"ref", "resume" | where:"lang", page.lang | first %}
+        <a class="btn btn-color btn-circle btn-animate mt-20" href="{{ resume.url }}"><span>{{ page.about_me.my_resume }} <i class="mdi mdi-arrow-right"></i></span></a> </div>
+    </div>
+  </div>
+</section>
+<!--=== About Us End ======-->

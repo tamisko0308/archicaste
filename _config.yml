@@ -1,1 +1,40 @@
-theme: jekyll-theme-cayman
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:
+  en: ArchiCaste
+  it: ArchiCaste
+my_name: Tamara Castellano
+phone:
+  - (+39) 3293859612
+  - (+30) 6987588680‬
+description:
+  en: Hi, I am Tamara Castellano, an Italian architect. This is my portfolio website.
+  it: Mio sito portfolio
+index:
+  en:
+  it: /it/
+feed:
+  en: /feed.xml
+  it:
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://archicaste.com" # the base hostname & protocol for your site
+
+# Define a projects collection used for the portfolio
+collections:
+  portfolio:
+    output: true
+
+defaults:
+- scope:
+    path: assets/images/portfolio
+  values:
+    portfolio_img: true
+
+# Build settings
+markdown: kramdown

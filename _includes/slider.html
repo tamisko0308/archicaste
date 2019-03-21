@@ -1,0 +1,25 @@
+{% include path_helper %}
+
+<!--=== Flex Slider Start ======-->
+<section class="pt-0 pb-0" id="home">
+  <div class="slider-bg flexslider">
+    <ul class="slides">
+      {% for slide in page.slides %}
+      <!--=== SLIDE {{ forloop.index }} ===-->
+      <li>
+        <div class="slide-img parallax-img parallax-effect" style="background:url({{images_path}}/slides/{{slide.image}}) center center / cover scroll no-repeat;"></div>
+        <div class="hero-text-wrap">
+          <div class="hero-text white-color">
+            <div class="container text-left">
+              <h3 class="white-color text-uppercase font-400 letter-spacing-5">{{ slide.text[0] }}</h3>
+              <h2 class="white-color font-400">{{ slide.text[1] }}</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!--=== Flex Slider End ======-->

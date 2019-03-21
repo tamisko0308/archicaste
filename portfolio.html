@@ -1,0 +1,42 @@
+---
+layout: default
+ref: portfolio
+lang: en
+title: My Works
+title-bg: portfolio.jpg
+---
+
+{% include title-hero.html %}
+
+<!--=== Portfolio Start ======-->
+<section class="pt-100 pb-100">
+  <div class="container">
+    <div class="row">
+      <div class="portfolio-container text-center">
+        <ul id="portfolio-grid" class="two-column hover-two">
+          {% assign projects=site.portfolio | where:"lang", page.lang %}
+          {% for project in projects reversed %}
+            <li class="portfolio-item gutter-space">
+              <div class="portfolio">
+                <div class="dark-overlay"></div>
+                <img src="{{images_path}}/portfolio/{{project.ref}}/thumbnail.jpg" alt="{{project.title}}">
+                <div class="portfolio-wrap">
+                  <div class="portfolio-description">
+                    <a href="{{content_path}}{{project.url}}"><h3 class="portfolio-title">{{project.title}}</h3></a>
+                  </div>
+                  <!--=== /.project-info ===-->
+                  <ul class="portfolio-details">
+                    <li><a href="{{content_path}}{{project.url}}"><i class="fa fa-link"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--=== /.portfolio ===-->
+            </li>
+
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=== Portfolio End ======-->
