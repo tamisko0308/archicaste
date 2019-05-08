@@ -1,6 +1,6 @@
 ---
 layout: project
-ref: architecture–media
+ref: digital-composition
 lang: en
 title: Digital Composition
 ---
