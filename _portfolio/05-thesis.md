@@ -7,9 +7,9 @@ title: Thesis Project at University of Florence
 
 **Thesis Title** Villa Chiriatti: proposal for a ludic center
 
-**Supervisor** Giancarlo Cataldi
+**Supervisor** Prof. Giancarlo Cataldi
 
-**Co-supervisor** Giancarlo Littera
+**Co-supervisor** Arch. Giancarlo Littera
 
 ---
 
