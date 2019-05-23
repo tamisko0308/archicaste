@@ -9,10 +9,10 @@ title: Greenlink...Periurban Green Spaces
 
 **Professor** Biagio Guccione
 
-**Subject** Redevelopment Proposal for an area of Florence called La Mensola
+**Subject** Redevelopment Proposal for a suburban area of Florence: La Mensola
 
-**Co-workers** N. del Gaudio, 
-D. Coumailleau
+**Co-workers** Nicoletta del Gaudio, 
+Dorothee Coumailleau
 
 ---
 This work concern the redevelopment proposal for an area to the North East of Florence, between the city and the countryside. The area is characterized by the crossing of the Mensola creek from which it takes its name. 
