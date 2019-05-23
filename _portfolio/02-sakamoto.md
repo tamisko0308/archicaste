@@ -9,7 +9,7 @@ title:  Weekend House by Kazunari Sakamoto
 
 **Professor** Gianni Bardazzi
 
-**Subject** Weekend house by architect Kazunari Sakamoto
+**Subject** Study of building materials 
 
 ---
 
