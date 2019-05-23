@@ -9,7 +9,7 @@ title:  The Reversible House
 
 **Professor** Roberto Bologna
 
-**Subject** Design of Construction Systems - The Reversible House
+**Subject** Design of construction systems: the reversible house
 
 ---
 This work is a hand drawing that concern the design of a house for a single family.
